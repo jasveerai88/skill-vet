@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "skill-vet"
+version = "1.0.0"
+description = "Vet an agent skill pack before you install it — stealing, spying and hidden sending, proven with file-and-line evidence."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "Jasveer Singh" },
+]
+keywords = [
+    "agent-skills",
+    "claude-code",
+    "ai-agents",
+    "security",
+    "static-analysis",
+    "cli",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Security",
+    "Topic :: Software Development :: Quality Assurance",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/jasveerai88/skill-vet"
+Repository = "https://github.com/jasveerai88/skill-vet"
+Issues = "https://github.com/jasveerai88/skill-vet/issues"
+
+[project.scripts]
+skill-vet = "skill_vet:main"
+
+# The implementation is a single standard-library module in
+# src/; it is installed as the top-level module `skill_vet`,
+# and `python3 src/skill_vet.py` keeps working from a checkout.
+[tool.setuptools]
+package-dir = { "" = "src" }
+py-modules = ["skill_vet"]
