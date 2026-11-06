@@ -3,12 +3,12 @@ requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "skill-vet"
+name = "skill-vet-cli"
 version = "1.0.0"
 description = "Vet an agent skill pack before you install it — stealing, spying and hidden sending, proven with file-and-line evidence."
 readme = "README.md"
 requires-python = ">=3.10"
-license = { text = "MIT" }
+license = "MIT"
 authors = [
     { name = "Jasveer Singh" },
 ]
@@ -24,7 +24,6 @@ classifiers = [
     "Development Status :: 5 - Production/Stable",
     "Environment :: Console",
     "Intended Audience :: Developers",
-    "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.10",
@@ -39,6 +38,7 @@ dependencies = []
 Homepage = "https://github.com/jasveerai88/skill-vet"
 Repository = "https://github.com/jasveerai88/skill-vet"
 Issues = "https://github.com/jasveerai88/skill-vet/issues"
+Changelog = "https://github.com/jasveerai88/skill-vet/blob/main/CHANGELOG.md"
 
 [project.scripts]
 skill-vet = "skill_vet:main"
