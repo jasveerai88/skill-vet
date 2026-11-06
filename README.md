@@ -35,7 +35,7 @@ audit.
 ## Quick start
 
 ```bash
-pipx install git+https://github.com/jasveerai88/skill-vet              # or: pip install git+https://github.com/jasveerai88/skill-vet
+pipx install skill-vet-cli              # or: pip install skill-vet-cli
 skill-vet vet ~/Downloads/some-skill
 ```
 
